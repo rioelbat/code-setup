@@ -31,7 +31,7 @@ npm install --save-dev eslint-config-prettier
 npm install --save-dev --save-exact prettier
 ```
 
-### 🪡Update extends with this configuration in eslintrc.json
+### 🛡️Update extends with this configuration in eslintrc.json
 ```
 "extends": ["airbnb", "airbnb/hooks", "plugin:react/jsx-runtime", "prettier"],
 ```
