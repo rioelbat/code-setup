@@ -1,12 +1,12 @@
 # 💥VSCode - ESLint, Prettier & Airbnb Setup
 
-### 🪁Install ESLint
+### 🪁Install `ESLint`
 
 ```
 npm install --save-dev eslint
 ```
 
-### 🎐Init ESLint configuration in project folder
+### 🎐Init `ESLint` configuration in project folder
 
 ```
 npx eslint --init
@@ -31,22 +31,22 @@ npm install --save-dev eslint-config-prettier
 npm install --save-dev --save-exact prettier
 ```
 
-### 🛡️Update extends with this configuration in eslintrc.json
+### 🛡️Update extends option with this configuration in `eslintrc.json`
 ```
 "extends": ["airbnb", "airbnb/hooks", "plugin:react/jsx-runtime", "prettier"],
 ```
 
-### 🧵Remove value of plugins in eslintrc.json
+### 🧵Remove value of plugins option in `eslintrc.json`
 ```
 "plugins": [],
 ```
 
-### 📀Create .eslintignore file and add these lines in to it
+### 📀Create `.eslintignore` in root directory and add these lines
 ```
 vite.config.js
 ```
 
-### 🪙Create .prettierrc.json in root directory and add these options
+### 🪙Create `.prettierrc.json` in root directory and add these options
 ```
 {
     "tabWidth": 2,
@@ -58,24 +58,24 @@ vite.config.js
 }
 ```
 
-### 📮Add these lines to the script in package.json
+### 📮Add these lines to the script in `package.json`
 ```
 "lint": "eslint src/**/*.{js,jsx,json}",
 "lint:fix": "eslint --fix src/**/*.{js,jsx,json}",
 "format": "prettier --write src/**/*.{js,jsx,css,md,json} --config ./.prettierrc.json"
 ```
 
-##### 📍Use this command to run eslint command in src/**/*.{js,jsx,json}
+##### 📍Use this command to run `eslint` in src/**/*.{js,jsx,json}
 ```
 npm run lint
 ```
 
-##### 📍Use this command to run eslint command & fix if there is any error in src/**/*.{js,jsx,json}
+##### 📍Use this command to run `eslint` & fix if there is any error found in src/**/*.{js,jsx,json}
 ```
 npm run lint:fix
 ```
 
-##### 📍Use this command to format with prettier in src/**/*.{js,jsx,json}
+##### 📍Use this command to format with `prettier` in src/**/*.{js,jsx,json}
 ```
 npm run format
 ```
