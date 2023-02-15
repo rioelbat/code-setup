@@ -81,8 +81,8 @@ npm run format
 ```
 
 
-### Reference
+### References
 * ESLint Rules - https://eslint.org/docs/rules/
 * Prettier Options - https://prettier.io/docs/en/options.html
 * Airbnb Style Guide - https://github.com/airbnb/javascript
-* https://blog.devgenius.io/eslint-prettier-typescript-and-react-in-2022-e5021ebca2b1
+* ESLint + Prettier + Typescript and React in 2022 - https://blog.devgenius.io/eslint-prettier-typescript-and-react-in-2022-e5021ebca2b1
