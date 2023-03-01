@@ -10,14 +10,14 @@ npm install vite-plugin-eslint --save-dev
 
 ### Update `vite.config.js`
 
-```
+```javascript
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-`import eslint from 'vite-plugin-eslint';`
+import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), `eslint()`],
+  plugins: [react(), eslint()],
 });
 ```
 
@@ -59,25 +59,19 @@ npm install --save-dev --save-exact prettier
 
 ## 🛡️Update extends option with this configuration in `eslintrc.json`
 
-```
+```json
 "extends": ["airbnb", "airbnb/hooks", "plugin:react/jsx-runtime", "prettier"],
 ```
 
 ## 🧵Remove value of plugins option in `eslintrc.json`
 
-```
+```json
 "plugins": [],
-```
-
-## 📀Create `.eslintignore` in root directory and add these lines
-
-```
-vite.config.js
 ```
 
 ## 👾Create `.prettierrc.json` in root directory and add these options
 
-```
+```json
 {
     "tabWidth": 2,
     "printWidth": 100,
@@ -90,7 +84,7 @@ vite.config.js
 
 ## 📮Add these script alias to the script props in `package.json`
 
-```
+```json
 "lint": "eslint src/**/*.{js,jsx,json}",
 "lint:fix": "eslint --fix src/**/*.{js,jsx,json}",
 "format": "prettier --write src/**/*.{js,jsx,css,md,json} --config ./.prettierrc.json"
